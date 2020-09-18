@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
+
+*{
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body{
+    background: #fff;
+    font-family: 'Oswald', sans-serif;  /* add a cool font */
+    overflow-x:hidden;
+}
+span{
+    margin:1px 1px 1px;
+}
+svg{
+    margin:0.2rem;
+}
+
+/* Navigation Menu on Mobile */
+.nav{
+    position: fixed;
+    width:100%;
+    background: #7CE805;
+    padding:0.7rem; 
+    z-index:1; 
+    top:0; 
+    overflow: hidden; 
+}
+.nav .menu-list{
+    display: none;
+    list-style-type: none;
+    margin:1rem 0;
+    padding:0;    
+}
+.nav .menu-list li{
+    padding:0.2rem;
+    
+}
+.nav  .menu-list li a{
+    color:white;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.nav  .showlist{
+    display: block;
+}
+
+/* Section A */
+.section-a{
+    position:relative;
+    overflow-y: hidden;
+}
+.section-a img{
+  opacity:0.7;
+  height:400px;
+}
+.section-a .content{
+    height:450px;
+    color:lime;
+    position: absolute;
+    text-align: center;
+    top:40px;
+    left:60px;
+    font-size: 20px;
+    animation:intro  linear 1.5s forwards;
+}
+.section-a .content .btn{
+    text-decoration: none;
+    position: absolute;
+    left:100px;
+    padding: 1rem;
+    display: inline-block;
+    background: transparent;
+    color:white;
+    border:1px solid white;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: background 1s;
+    animation: side  1.5s linear   forwards;
+}
+.section-a .content .btn:hover{
+    background: green;
+    color: #fff;
+}
+
+/* Section A Animation */
+@keyframes intro{
+    0%{ transform: translateY(-300px);}
+    70%{transform:translateY(0px)}
+    90%{transform:translateY(-20px)}
+    100%{transform:translateY(0)}
+}
+@keyframes side{
+    0%{ transform: translateX(300px) rotateZ(120deg)}
+    100%{transform:translateX(0)}
+}
+
+/* Section B */
+
+#aboutus{
+    background: #333;
+    margin:0;
+    padding:1rem;
+    text-align: center;
+    
+}
+#aboutus h1{
+    color:greenyellow;
+}
+#aboutus p{
+    color:whitesmoke;
+}
+
+/* Section C services */
+#services{
+    background-color: grey;
+    padding:1rem;
+    text-align: center;
+    color:white;
+}
+#services h1{
+    border-bottom: 2px solid greenyellow;
+    color:white;
+    width:80%;
+    padding:1rem;
+    margin-left:2rem;
+}
+
+/* Section D contact */
+#contact{
+    background: #eee;
+    padding: 1rem;
+    text-align: center;
+}
+#contact h1{
+    color:limegreen;
+    padding:1rem;
+    margin-left:2rem;
+    border-bottom: 3px solid lime;
+    width:80%;
+}
+#contact form input, #newsletter input{
+    display:block;
+    border:none;
+    border-radius: 5px;
+    border-bottom:2px solid lawngreen;
+    font-size: 19px;
+    margin:4px 3rem;;
+    width:80%;
+    
+    padding:0.7rem;
+}
+
+#contact textarea{
+    height:150px;
+    border:none;
+    border-radius: 5px;
+    padding:0.7rem;
+    font-size:19px;
+}
+
+#contact #newsletter button{
+    display: inline-block;
+    width:40%;
+    border:none;
+    padding:0.5rem;
+    font-size:16px;
+    margin: 1rem 0;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: white;
+    color:green;
+    transition:1s ;
+
+}
+#contact #newsletter button:hover{
+    background: green;
+    color:white;
+}
+
+footer{
+    text-align: start;
+    padding:1.5rem;
+    background: green;
+}
+footer ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+footer li{
+    margin:0.5rem;
+    color:white;
+}
+footer li a{
+    color:white;
+    text-decoration: none;
+    display:block;
+    font-size: 18px;
+    border-bottom: 3px solid white;
+    width:30%;
+}
+footer p{
+    color:whitesmoke;
+    font-weight: bold;
+    margin:2rem  3rem;
+}
+
+
+
+/* Gallery */
+.head{
+    transform: translateY(35%);
+    text-align: center;
+    animation: right-in 2s ease-out  forwards;
+}
+.head h1{
+    font-size: 40px;
+    font-weight: 400;
+    border-bottom: 5px solid lime;
+    margin:2rem auto; 
+    width:50%;   
+}
+.head p{
+    font-size:23px;
+}
+
+/* Animation for .head */
+@keyframes right-in{
+    from{transform: translateX(400px)}
+    to{transform: translateX(0px) translateY(35%)}
+}
+
+.container{
+    max-width:1000px;
+    margin:6rem auto;
+    background: limegreen;
+    color: lime;
+    padding:2rem;
+}
+.card{
+    background: #eee;
+    padding:2rem;
+    margin:1rem;
+    
+}
+
+
+
+/* For Desktop */
+
+@media(min-width:700px){
+
+    /* Navigation bar for Desktop */
+   #menu-icon{
+     display:none;
+ }
+ #cancel{
+     display:none;
+ }
+ .nav{
+     background:transparent;
+     width:80%;
+     left:10%;
+     position: absolute;
+     top:10%;
+     border-top: 3px solid lime;
+     border-bottom: 3px solid lime;
+     border-radius: 5px;
+     animation: slidein 2s linear  forwards;
+ }
+
+ /* Navigation Bar animation */
+ @keyframes slidein {
+     from{transform: translateX(-500px);}
+     to{transform: translateX(0)}
+     
+ }
+  .nav .menu-list{
+     display:block;
+     background: transparent;
+ }
+ #menu-list{
+     display:flex;
+     padding:0;
+     margin:0;
+     background: transparent;
+ }
+ #menu-list li{
+     margin:0 auto;
+ }
+
+ #menu-list li a{
+     transition:1s;
+ }
+ #menu-list li a:hover{
+     font-size:30px;
+ }
+  
+ .wrapper{
+     text-align: center;
+     max-width:1000px;
+     margin:0 auto;
+ }
+ /* Section A */
+ .section-a img{
+    opacity:0.7;
+    height:450px;
+    width:100%;
+  }
+  .section-a .content{
+      height:450px;
+      color:lime;
+      position: absolute;
+      text-align: center;
+      top:40%;
+      left:35%;
+      font-size: 20px;
+      animation:intro  linear 1.5s forwards;
+  }
+
+  .section-a .content h1{
+      font-size:35px;
+      letter-spacing: 2px;
+  }
+  .section-a .content p{
+      font-weight:400;
+  }
+
+  /* Section B */
+
+  #aboutus{
+    background: #333;
+    height:600px;
+    margin:0;
+    padding:1rem;
+    text-align: center;
+    padding: 1rem 4rem;
+    
+}
+#aboutus h1{
+    color:greenyellow;
+    border-bottom:4px solid lime;
+    width:30%;
+    margin:1rem auto;
+}
+#aboutus p{
+    color:whitesmoke;
+}
+
+
+/* Section c */
+
+#services .content-image{
+    display:flex;
+    padding: 0;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-around;
+
+}
+.service-card{
+    max-width:40%;
+    
+}
+.service-card img{
+    width:80% ;
+    height:200px;
+}
+
+#services{
+    background-color: grey;
+    margin: 0 auto;
+    text-align: center;
+    color:white;
+}
+
+
+/* Section D Contact */
+
+
+
+
+#contact form input, #newsletter input{
+    display:block;
+    border-radius: 5px;
+    font-size: 19px;
+    margin:3px auto;
+    width:50%;
+    border: none;
+    border-bottom: 2px solid lawngreen;
+    padding:0.7rem;
+}
+
+#contact textarea{
+    height:150px;
+    border:none;
+    border-radius: 5px;
+    padding:0.7rem;
+    font-size:19px;
+}
+
+#contact #newsletter button{
+    display: inline-block;
+    width:15%;
+    border:none;
+    padding:0.5rem;
+    font-size:16px;
+    margin: 1rem 0;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: white;
+    color:green;
+    transition:1s ;
+
+}
+ footer p{
+     margin:1rem auto;
+     transform: translateX(30%);
+
+ }
+
+
+ /* Gallery */
+  #gall-nav{
+      background: lawngreen;
+      position:absolute;
+      left:0;
+      top:0;
+      width:100%;
+      overflow: hidden;
+  }
+  #gall-nav #menu-list li{
+    overflow: hidden;
+    border-radius: 3rem;
+  }
+  #gall-nav #menu-list li a{
+      padding:1rem;
+      transition: 0.5s;
+      
+      
+
+      
+  }
+  #gall-nav #menu-list li a:hover{
+      background: white;
+      color:lime;
+      border-radius: 3rem;
+
+  }
+  .container{
+    display:flex;
+    padding: 0;
+    padding:1rem;
+    flex-wrap: wrap;
+    margin: 4rem auto;
+    justify-content: space-around;
+
+}
+.container .card{
+    max-width:40%;
+    
+}
+.card img{
+    height:200px;
+    width:80%;
+}
+#services{
+    background-color: grey;
+    margin: 0 auto;
+    text-align: center;
+    color:white;
+}
+}
