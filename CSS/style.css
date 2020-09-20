@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 *{
     box-sizing: border-box;
@@ -7,7 +7,7 @@
 
 body{
     background: #fff;
-    font-family: 'Oswald', sans-serif;  /* add a cool font */
+    font-family: 'Poppins', sans-serif;
     overflow-x:hidden;
 }
 span{
