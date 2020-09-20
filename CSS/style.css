@@ -290,6 +290,7 @@ footer p{
  }
  #menu-list li{
      margin:0 auto;
+     overflow: hidden;
  }
 
  #menu-list li a{
@@ -439,6 +440,7 @@ footer p{
   #gall-nav #menu-list li a{
       padding:1rem;
       transition: 0.5s;
+      overflow: hidden;
       
       
 
