@@ -161,7 +161,7 @@ svg{
     font-size:19px;
 }
 
-#contact #newsletter button{
+#contact #newsletter button, form .btn{
     display: inline-block;
     width:40%;
     border:none;
@@ -175,7 +175,7 @@ svg{
     transition:1s ;
 
 }
-#contact #newsletter button:hover{
+#contact #newsletter, form button:hover{
     background: green;
     color:white;
 }
