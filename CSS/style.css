@@ -30,22 +30,27 @@ svg{
 .nav .menu-list{
     display: none;
     list-style-type: none;
-    margin:1rem 0;
+    margin:0 0;
     padding:0;    
 }
 .nav .menu-list li{
     padding:0.2rem;
     
 }
+
 .nav  .menu-list li a{
     color:white;
-    font-size: 22px;
+    font-size: 2rem;
     text-decoration: none;
 }
+
+
+
 
 .nav  .showlist{
     display: block;
 }
+
 
 /* Section A */
 .section-a{
@@ -54,15 +59,16 @@ svg{
 }
 .section-a img{
   opacity:0.7;
-  height:400px;
+  height:300px;
 }
 .section-a .content{
     height:450px;
-    color:lime;
+    color:white;
     position: absolute;
+    margin:0 auto;
     text-align: center;
     top:40px;
-    left:60px;
+    left:30px;
     font-size: 20px;
     animation:intro  linear 1.5s forwards;
 }
@@ -111,6 +117,8 @@ svg{
 }
 #aboutus p{
     color:whitesmoke;
+    text-align: start;
+
 }
 
 /* Section C services */
@@ -119,6 +127,9 @@ svg{
     padding:1rem;
     text-align: center;
     color:white;
+}
+#services p{
+    text-align: start;
 }
 #services h1{
     border-bottom: 2px solid greenyellow;
@@ -234,17 +245,19 @@ footer p{
 }
 
 .container{
-    max-width:1000px;
-    margin:6rem auto;
-    background: limegreen;
-    color: lime;
-    padding:2rem;
+    max-width:100%;
+    background: #eee;
+    margin-top: 4rem;
+    color:#333;
+
 }
 .card{
-    background: #eee;
-    padding:2rem;
-    margin:1rem;
-    
+    background:white;
+    padding:1rem;
+    margin:0.7rem;   
+}
+.card h1{
+    border-bottom: 3px solid lime;
 }
 
 
