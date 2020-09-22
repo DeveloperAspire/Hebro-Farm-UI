@@ -142,8 +142,9 @@ svg{
 /* Section D contact */
 #contact{
     background: #eee;
-    padding: 1rem;
+    padding: 0;
     text-align: center;
+    margin-bottom:1rem;
 }
 #contact h1{
     color:limegreen;
@@ -158,10 +159,10 @@ svg{
     border-radius: 5px;
     border-bottom:2px solid lawngreen;
     font-size: 19px;
-    margin:4px 3rem;;
+    margin:7px auto;
     width:80%;
-    
     padding:0.7rem;
+    border:1px solid red;
 }
 
 #contact textarea{
@@ -170,8 +171,15 @@ svg{
     border-radius: 5px;
     padding:0.7rem;
     font-size:19px;
+    width:90%;
 }
 
+#contact #newsletter{
+    margin:0 auto;
+    color:white;
+    border:1px solid black;
+    width:100%;
+}
 #contact #newsletter button, form .btn{
     display: inline-block;
     width:40%;
